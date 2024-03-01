@@ -1,0 +1,26 @@
+.progress {
+  height: 5px;
+
+  /* background-color: #fff; */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    var(--font-color-opposite) 0%,
+    var(--font-color-secondary) 50%,
+    var(--font-color-primary) 100%
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: progress 1s linear;
+}
+
+.cursor {
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  border-radius: 50px;
+  background-color: var(--font-color-primary);
+  filter: blur(2.5em);
+  opacity: 0.5;
+}

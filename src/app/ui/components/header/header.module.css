@@ -1,0 +1,143 @@
+.homeHeader {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em 0.7em;
+  margin: 8em 0 0 6em;
+  color: var(--font-color-primary);
+  width: calc(50% - 6em);
+}
+
+.homeHeader h1 {
+  font-size: clamp(2rem, 0rem + 5.333vw, 4.5rem);
+}
+
+.homeHeader h2 {
+  font-size: 1.8em;
+  font-size: clamp(1.2rem, 0.24rem + 2.56vw, 2.4rem);
+  font-family: YanoneKaffeesatz;
+  color: var(--font-color-secondary);
+  margin: 0.5em 0 1em;
+}
+
+.homeHeader p {
+  font-family: Inter;
+  font-size: clamp(0.8rem, 0.48rem + 0.853vw, 1rem);
+  margin-bottom: 1em;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.4em;
+}
+
+.navBar a {
+  color: var(--font-color-primary);
+  font-size: 1.2em;
+}
+
+.linkBar {
+  width: 2em;
+  height: 0.09em;
+  border-top: 1px solid var(--font-color-secondary);
+  margin: 0.7em 0.5em 0 0;
+  transition: all 0.2s ease;
+}
+
+.current .linkBar {
+  width: 4em;
+  border-top: 2px solid var(--font-color-secondary);
+}
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.7em;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  gap: 3.2em;
+  justify-content: left;
+  padding: 2em 0;
+  margin-top: 4em;
+}
+
+@media screen and (min-width: 1350px) {
+  .homeHeader {
+    width: 35em;
+    margin: 8em 0 0 calc(50% - 35em);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homeHeader {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    padding: 0.5em 0 0.8em;
+    background-color: var(--shadow-color);
+  }
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .linkContainer {
+    display: flex;
+    flex-direction: column;
+    width: 6em;
+    align-items: center;
+    margin: 0;
+  }
+
+  .linkContainer a {
+    opacity: 0.4;
+  }
+  .hero {
+    display: none;
+    position: absolute;
+    top: 7em;
+    left: 0;
+    text-align: center;
+    padding: 0 2em;
+    opacity: var(--hero-opacity);
+  }
+
+  .linkBar {
+    width: 1em;
+    height: 0.09em;
+    border-top: 1px solid var(--font-color-secondary);
+    margin: 0.7em 0 0.2em;
+    transition: all 0.2s ease;
+  }
+
+  .current .linkBar {
+    width: 4.5em;
+    border-top: 2px solid var(--font-color-secondary);
+  }
+  .current a {
+    opacity: 1;
+  }
+  .socialMedia {
+    display: none;
+  }
+
+  .homeHeader h1 {
+    font-size: 3em;
+  }
+
+  .homeHeader h2 {
+    font-size: 1.8em;
+  }
+
+  .homeHeader p {
+    font-family: Inter;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+}

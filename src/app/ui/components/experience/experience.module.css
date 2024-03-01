@@ -1,0 +1,135 @@
+.experience {
+  height: 100dvh;
+}
+
+.experience > div {
+  padding-top: 2em !important;
+  display: flex;
+  flex-direction: column;
+
+  color: var(--font-color-primary);
+}
+
+.experience > div:hover {
+  background-color: var(--background-transparent);
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+}
+
+.row > div:first-child {
+  width: 9em;
+}
+
+.row > div:nth-child(2) {
+  width: 100%;
+}
+.experience > div > div > div:nth-child(1) > p {
+  color: var(--font-color-secondary);
+  text-align: right;
+  margin-right: 0.5em;
+  font-size: 1em;
+  letter-spacing: 0.08em;
+  font-family: YanoneKaffeesatz;
+  font-weight: 800;
+  margin-top: 0;
+}
+
+.experience .row h3 {
+  color: var(--font-color-tertiary);
+  letter-spacing: 0.1em;
+  font-size: 1.1em;
+}
+
+.experience .row ul {
+  margin: 1em 0 0 1em;
+  font-size: 0.8em !important;
+  font-family: Inter;
+  font-weight: 600;
+}
+.experience .row p {
+  margin-top: 0.5em;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 0.85em;
+}
+.skills,
+.experienceLinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.3em;
+  margin-top: 1em;
+}
+
+.skills p {
+  background-color: var(--background-transparent);
+  padding: 0.3em 0.8em 0.3em;
+  font-family: YanoneKaffeesatz;
+  color: var(--font-color-secondary);
+  border-radius: 15px;
+  font-size: 0.7em !important;
+  margin-top: 0 !important;
+}
+
+.experienceLinks p {
+  display: inline;
+  margin: -1em 0.3em;
+}
+
+@media screen and (max-width: 767px) {
+  .experience {
+    padding-top: 2em;
+  }
+
+  .row {
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+
+  .row > div:first-child {
+    width: 6em;
+  }
+  .experience > div > div > div:nth-child(1) > p {
+    font-size: 0.8em;
+    letter-spacing: 0.08em;
+  }
+
+  .experience .row h3 {
+    color: var(--font-color-tertiary);
+    letter-spacing: 0.1em;
+    font-size: 1em;
+  }
+
+  .experience .row ul {
+    margin: 1em 0 0 1em;
+    color: var(--font-color-primary);
+    font-size: 0.9em;
+  }
+
+  .row > div:nth-child(2) p {
+    font-size: 1.1em;
+    font-family: YanoneKaffeesatz;
+  }
+
+  .experienceLinks {
+    margin-top: 0.5em;
+  }
+  .skills {
+    margin-top: 1em;
+  }
+  .skills p {
+    background-color: var(--background-transparent);
+    padding: 0.3em 0.5em 0.1em;
+    font-family: YanoneKaffeesatz;
+    color: var(--font-color-secondary);
+    border-radius: 15px;
+    font-size: 1em !important;
+  }
+  .experience > div {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}

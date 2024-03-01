@@ -1,0 +1,61 @@
+.contact {
+  height: 100dvh;
+  padding-top: 4em;
+}
+.contactForm {
+  color: var(--font-color-primary);
+  gap: 1em;
+}
+
+.contactForm div {
+  margin: 0;
+  margin-bottom: 3em;
+}
+
+.contactForm input,
+.contactForm textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--font-color-primary);
+  border-radius: 3px;
+  font-size: 1.2em;
+  box-shadow: 5px 5px 0 var(--shadow-color);
+  margin: 0.3em 0 1.8em;
+
+  color: var(--font-color-primary);
+  background-color: transparent;
+  font-family: YanoneKaffeesatz;
+}
+
+.contactForm label,
+.contactForm button {
+  color: var(--font-color-primary);
+  font-size: 1ch.5;
+  letter-spacing: 2px;
+}
+
+.contactForm input {
+  padding: 0.8em 0.5em 0.3em;
+}
+.contactForm textarea {
+  padding: 0.8em 0.5em 0.3em;
+  min-height: 15vh;
+}
+
+.contactForm button {
+  background-color: var(--font-color-primary);
+  color: black;
+  padding: 10px 2em;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 5px 5px 0 var(--shadow-color);
+  border-radius: 5px;
+}
+
+.contactForm label {
+  position: absolute;
+  margin: -0.5em 0.5em 0;
+  padding: 0 0 0 0.2em;
+  z-index: 100;
+  background-color: rgb(4, 27, 29);
+}

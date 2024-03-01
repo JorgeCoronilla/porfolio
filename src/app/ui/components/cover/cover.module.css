@@ -1,0 +1,71 @@
+.cover {
+  height: 100dvh;
+  /* object-fit: cover; */
+  color: var(--font-color-primary);
+  padding-top: 4em;
+}
+
+.cover div {
+  padding-top: 2em !important;
+  padding-bottom: 2em !important;
+}
+
+.cover div:hover {
+  background-color: var(--background-transparent);
+}
+
+.cover p {
+  color: var(--font-color-primary);
+  font-family: Inter;
+  font: 300;
+  line-height: 1.5;
+  margin-top: 0.5em;
+  font-size: clamp(0.8rem, 0.48rem + 0.853vw, 1.2rem);
+}
+.cover span {
+  font-family: inherit;
+  position: absolute;
+
+  color: var(--font-color-primary);
+}
+.hero {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    display: block;
+    text-align: center;
+    opacity: var(--hero-opacity);
+    margin-bottom: 1em !important;
+  }
+
+  .hero h1 {
+    font-size: 3em;
+    margin-top: 1em;
+  }
+
+  .hero h2 {
+    font-size: 1.8em;
+    font-family: YanoneKaffeesatz;
+    color: var(--font-color-secondary);
+    margin: 0.5em 0 0.2em;
+  }
+
+  .hero p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    font-family: Inter;
+    margin-bottom: 0;
+  }
+  .cover {
+    padding-top: 0;
+  }
+  .cover p {
+    font-size: 0.9em;
+  }
+  .cover div {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
