@@ -48,6 +48,7 @@
 .projectContainer img {
   width: 100%;
 }
+
 .projectContainer:hover {
   opacity: 1;
 }

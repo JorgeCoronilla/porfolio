@@ -51,16 +51,16 @@
   .hero h1 {
     font-family: Plus_Jakarta;
     font-weight: 400;
-    line-height: 0.08;
+    line-height: 0.12;
     font-size: 3em;
     margin-top: 1em;
   }
 
   .hero h2 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-family: YanoneKaffeesatz;
     font-family: Plus_Jakarta;
-
+    letter-spacing: 0.17em;
     color: var(--font-color-secondary);
     margin: 0.5em 0 0.2em;
   }
@@ -81,5 +81,9 @@
   .cover div {
     padding-top: 2em !important;
     padding-bottom: 0 !important;
+  }
+  .title2 {
+    letter-spacing: 0.17em !important;
+    margin-left: 0.15em;
   }
 }
