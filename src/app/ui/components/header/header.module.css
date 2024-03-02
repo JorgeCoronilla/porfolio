@@ -10,7 +10,6 @@
 }
 
 .homeHeader h1 {
-  font-size: clamp(2rem, 0rem + 5.333vw, 4.5rem);
   font-size: clamp(1.6rem, 0.6rem + 4.234vw, 4.5rem);
   font-family: Plus_Jakarta;
   font-weight: 400;
@@ -34,14 +33,17 @@
   font-size: 1.8em;
   font-size: clamp(1.2rem, 0.24rem + 2.56vw, 2.4rem);
   font-family: YanoneKaffeesatz;
+  font-family: Plus_Jakarta;
+
   color: var(--font-color-secondary);
   margin: 0.5em 0 0.2em;
 }
 
 .homeHeader p {
-  font-family: Inter;
+  font-family: Plus_Jakarta;
   font-size: clamp(0.8rem, 0.48rem + 0.853vw, 1rem);
   margin-bottom: 1em;
+  font-weight: 600;
 }
 
 .navBar {
@@ -79,7 +81,7 @@
   gap: clamp(2em, -1.2em + 8.533vw, 6em);
   justify-content: left;
   padding: 2em 0;
-  margin-top: 1.5em;
+  margin-top: 0.5em;
 }
 .linkContainer a {
   opacity: 0.7;
@@ -94,10 +96,9 @@
     margin: 10em 0 0 calc(50% - 35em);
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 879px) {
   .title2 {
-    letter-spacing: 0.15em;
-    font-weight: 600 !important;
+    letter-spacing: 0.1536em;
   }
 }
 

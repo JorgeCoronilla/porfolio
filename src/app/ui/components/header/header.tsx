@@ -16,7 +16,7 @@ export default function Header({ scroll }: HeaderProps) {
             <span className={styles.jorge}>Jorge</span>
           </h1>
           <h1 className={styles.title2}>Coronilla</h1>
-          <h2>Front-end developer </h2>
+          <h2>Full-stack developer </h2>
           <p>Desarrollo de aplicaciones web, accesibilidad y diseño.</p>
         </div>
         <NavBar scroll={scroll} />
