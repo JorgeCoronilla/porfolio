@@ -14,13 +14,14 @@
   left: 0;
   animation: progress 1s linear;
 }
-
-.cursor {
-  position: absolute;
-  width: 5em;
-  height: 5em;
-  border-radius: 50px;
-  background-color: var(--font-color-primary);
-  filter: blur(2.5em);
-  opacity: 0.5;
+@media screen and (min-width: 850px) {
+  .cursor {
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    border-radius: 50px;
+    background-color: var(--font-color-primary);
+    filter: blur(2.5em);
+    opacity: 0.5;
+  }
 }

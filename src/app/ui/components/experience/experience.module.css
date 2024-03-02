@@ -9,10 +9,12 @@
 
   color: var(--font-color-primary);
 }
-
-.experience > div:hover {
-  background-color: var(--background-transparent);
+@media screen and (min-width: 850px) {
+  .experience > div:hover {
+    background-color: var(--background-transparent);
+  }
 }
+
 .row {
   display: flex;
   flex-direction: row;
