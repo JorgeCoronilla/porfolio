@@ -104,3 +104,8 @@ p {
   font-family: Inter;
   src: url(./ui/fonts/Inter/Inter-VariableFont_slnt_wght.ttf);
 }
+
+@font-face {
+  font-family: Oswald;
+  src: url(./ui/fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}

@@ -11,18 +11,22 @@ const socialMediaList = [
   {
     url: 'https://github.com/JorgeCoronilla',
     icon: <IconGithubLogo />,
+    name: 'github',
   },
   {
     url: 'https://www.linkedin.com/in/jorge-coronilla-naranjo-20019376/',
     icon: <IconLinkedinCircled />,
+    name: 'linkedin',
   },
   {
     url: 'mailto:jorge.coronilla.naranjo@gmail.com',
     icon: <IconGmail />,
+    name: 'gmail',
   },
   {
     url: 'mailto:   ',
     icon: <IconXLogo />,
+    name: 'x socialmedia',
   },
 ];
 
@@ -39,6 +43,7 @@ export default function SocialMedia() {
           href={socialMedia.url}
           target="_blank"
           rel="noreferrer"
+          aria-label={`Link to my ${socialMedia.name}`}
         >
           {socialMedia.icon}
         </a>

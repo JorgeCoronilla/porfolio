@@ -21,11 +21,12 @@ export default function InputFields({
   return (
     <>
       <div>
-        <label>{label}</label>
+        <label id={`label-${name}`}>{label}</label>
         <input
           type={type}
           name={name}
           onChange={action}
+          aria-labelledby={`label-${name}`}
         />
         <Warning
           show={warning && isOnFocus}

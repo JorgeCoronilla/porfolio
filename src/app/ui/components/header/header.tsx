@@ -11,7 +11,10 @@ export default function Header({ scroll }: HeaderProps) {
     <>
       <header className={styles.homeHeader}>
         <div className={styles.hero}>
-          <h1>Jorge Coronilla</h1>
+          <h1 className={styles.title1}>
+            <span>Hi!</span> I&apos;m Jorge
+          </h1>
+          <h1 className={styles.title2}>Coronilla</h1>
           <h2>Front-end developer </h2>
           <p>Desarrollo de aplicaciones web, accesibilidad y diseño.</p>
         </div>

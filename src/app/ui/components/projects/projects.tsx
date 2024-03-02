@@ -9,7 +9,10 @@ export default function Projects() {
       <div>
         <div className={styles.projectContainer}>
           <div>
-            <img src="./share-it.webp"></img>
+            <img
+              alt="share-it screen shot"
+              src="./share-it.webp"
+            ></img>
           </div>
           <p>Share-it app</p>
           <div>
@@ -24,7 +27,10 @@ export default function Projects() {
         <div className={styles.projectContainer}>
           <div>
             {' '}
-            <img src="./accessibility-widget.webp"></img>
+            <img
+              alt="accessibility widget page screen shot"
+              src="./accessibility-widget.webp"
+            ></img>
           </div>
           <p>Web Accessibility widget</p>
         </div>

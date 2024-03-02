@@ -47,11 +47,12 @@ export const ContactForm = () => {
           />
 
           <div>
-            <label>Mensaje:</label>
+            <label id="text-area-label">Mensaje:</label>
             <textarea
               name="message"
               defaultValue="Hello! your message here"
               onChange={getData}
+              aria-labelledby="text-area-label"
             />
           </div>
           <Warning
