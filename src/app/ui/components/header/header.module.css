@@ -11,15 +11,23 @@
 
 .homeHeader h1 {
   font-size: clamp(2rem, 0rem + 5.333vw, 4.5rem);
-  font-family: Oswald;
-  font-weight: 900;
+  font-size: clamp(1.6rem, 0.6rem + 4.234vw, 4.5rem);
+  font-family: Plus_Jakarta;
+  font-weight: 400;
+  line-height: 1.1;
 }
 
-.title1 span {
+.hi {
   color: var(--font-color-secondary);
 }
+.jorge {
+  color: var(--font-color-secondary);
+  font-weight: 900;
+}
 .title2 {
-  letter-spacing: 0em;
+  letter-spacing: 0.17em;
+  font-weight: 600 !important;
+  margin-bottom: 0.7em;
 }
 
 .homeHeader h2 {
@@ -27,7 +35,7 @@
   font-size: clamp(1.2rem, 0.24rem + 2.56vw, 2.4rem);
   font-family: YanoneKaffeesatz;
   color: var(--font-color-secondary);
-  margin: 0.5em 0 1em;
+  margin: 0.5em 0 0.2em;
 }
 
 .homeHeader p {
@@ -68,13 +76,13 @@
 .socialMedia {
   display: flex;
   flex-direction: row;
-  gap: 3.2em;
+  gap: clamp(2em, -1.2em + 8.533vw, 6em);
   justify-content: left;
   padding: 2em 0;
-  margin-top: 4em;
+  margin-top: 1.5em;
 }
 .linkContainer a {
-  opacity: 0.4;
+  opacity: 0.7;
 }
 .current a {
   opacity: 1;
@@ -86,8 +94,14 @@
     margin: 10em 0 0 calc(50% - 35em);
   }
 }
+@media screen and (max-width: 1000px) {
+  .title2 {
+    letter-spacing: 0.15em;
+    font-weight: 600 !important;
+  }
+}
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 850px) {
   .homeHeader {
     position: fixed;
     margin: 0;

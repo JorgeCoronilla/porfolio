@@ -109,3 +109,7 @@ p {
   font-family: Oswald;
   src: url(./ui/fonts/Oswald/Oswald-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: Plus_Jakarta;
+  src: url(./ui/fonts/Plus_Jakarta/PlusJakartaSans-VariableFont_wght.ttf);
+}

@@ -12,7 +12,8 @@ export default function Header({ scroll }: HeaderProps) {
       <header className={styles.homeHeader}>
         <div className={styles.hero}>
           <h1 className={styles.title1}>
-            <span>Hi!</span> I&apos;m Jorge
+            <span className={styles.hi}>Hi!</span> I&apos;m{' '}
+            <span className={styles.jorge}>Jorge</span>
           </h1>
           <h1 className={styles.title2}>Coronilla</h1>
           <h2>Front-end developer </h2>
