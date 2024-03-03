@@ -5,8 +5,8 @@ function LinkIcon(props: React.SVGProps<SVGSVGElement>) {
     <svg
       viewBox="0 0 20 20"
       fill="currentColor"
-      height="0.8em"
-      width="0.8em"
+      height="0.6em"
+      width="0.6em"
       aria-hidden="true"
       {...props}
     >

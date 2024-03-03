@@ -23,16 +23,15 @@ export default function Card({
     <div>
       <div className={styles.row}>
         <div>
-          <p>{date}</p>
-        </div>
-        <div>
+          <p className={styles.date}>{date}</p>
           <h3>{title}</h3>
-          <p>{description} </p>
-          <ul>
+          <p className={styles.description}>{description} </p>
+          <p className={styles.description}>{skills}</p>
+          {/* <ul>
             {skills.map((skill, index) => (
               <li key={index}>{skill}</li>
             ))}
-          </ul>
+          </ul> */}
           <div className={styles.experienceLinks}>
             {links.map((link, index) => (
               <div key={index}>
