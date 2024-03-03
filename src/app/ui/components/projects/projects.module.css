@@ -46,7 +46,8 @@
 }
 
 .projectContainer img {
-  width: 100%;
+  width: 152px;
+  height: 81px;
 }
 
 .projectContainer:hover {
