@@ -49,6 +49,12 @@
   font-size: clamp(0.8rem, 0.48rem + 0.853vw, 1rem);
   margin-bottom: 1em;
 }
+
+@media screen and (max-height: 450px) {
+  .main > section {
+    height: 200dvh;
+  }
+}
 @media screen and (min-width: 1000px) {
   .main > section > div {
     margin: 0 7em 0 50%;
