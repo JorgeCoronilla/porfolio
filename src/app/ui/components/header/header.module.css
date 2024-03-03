@@ -81,6 +81,9 @@
   padding: 2em 0;
   margin-top: 0.5em;
 }
+footer .socialMedia {
+  display: none;
+}
 .linkContainer a {
   opacity: 0.7;
 }
@@ -151,10 +154,22 @@
   .current a {
     opacity: 1;
   }
-  .socialMedia {
+  header .socialMedia {
     display: none;
   }
-
+  footer .socialMedia {
+    display: block;
+    width: 100%;
+    color: var(--font-color-primary);
+    display: flex;
+    flex-direction: row;
+    gap: 3.5em;
+    justify-content: center;
+    padding: 0.3em 0;
+    align-items: center;
+    height: 8dvh;
+    margin: 0;
+  }
   .homeHeader h1 {
     font-size: 3em;
   }
