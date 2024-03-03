@@ -49,13 +49,12 @@
 .experience .row ul {
   margin: 1em 0 0 1em;
   font-size: 0.8em !important;
-  font-family: Plus_Jakarta;
 
   font-weight: 600;
 }
 .experience .row p {
   margin-top: 0.5em;
-  font-family: Plus_Jakarta;
+
   font-weight: 600;
   font-size: 0.85em;
 }
@@ -71,7 +70,7 @@
 .skills p {
   background-color: var(--background-transparent);
   padding: 0.3em 0.8em 0.4em;
-  font-family: YanoneKaffeesatz;
+
   color: var(--font-color-secondary);
   border-radius: 15px;
   font-size: 0.7em !important;
@@ -115,7 +114,6 @@
 
   .row > div:nth-child(2) p {
     font-size: 1.1em;
-    font-family: YanoneKaffeesatz;
   }
 
   .experienceLinks {
@@ -127,7 +125,7 @@
   .skills p {
     background-color: var(--background-transparent);
     padding: 0.3em 0.5em 0.1em;
-    font-family: YanoneKaffeesatz;
+
     color: var(--font-color-secondary);
     border-radius: 15px;
     font-size: 1em !important;

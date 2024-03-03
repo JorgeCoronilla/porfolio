@@ -1,13 +1,23 @@
 import type { Metadata } from 'next';
-// import { Inter } from 'next/font/google';
-import localFont from 'next/font/local';
+// import { Bebas_Neue, Plus_Jakarta_Sans } from 'next/font/google';
+// import localFont from 'next/font/local';
 
 import './globals.css';
 
-// const inter = Inter({ subsets: ['latin'] });
-const inter = localFont({
-  src: './ui/fonts/Bebas_Neue/BebasNeue-Regular.ttf',
-});
+// const bebas_neue = Bebas_Neue({
+//   subsets: ['latin'],
+//   weight: '400',
+//   variable: '--font-bebas-neue',
+// });
+// const plus_jakarta_sans = Plus_Jakarta_Sans({
+//   subsets: ['latin'],
+//   weight: ['200', '300', '400', '500', '600', '700', '800'],
+//   display: 'fallback',
+//   variable: '--font-jakarta-sans',
+// });
+// const plus_jakarta_sans = localFont({
+//   src: './ui/fonts/Plus_Jakarta/PlusJakartaSans-VariableFont_wght.ttf',
+// });
 
 export const metadata: Metadata = {
   title: 'Jorge Coronilla Naranjo porfolio',
@@ -21,7 +31,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      {/* <body className={plus_jakarta_sans.className}>{children}</body> */}
+      <body>{children}</body>
     </html>
   );
 }

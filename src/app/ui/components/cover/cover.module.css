@@ -1,6 +1,5 @@
 .cover {
   height: 100dvh;
-  /* object-fit: cover; */
   color: var(--font-color-primary);
   padding-top: 4em;
 }
@@ -9,10 +8,12 @@
   padding-top: 2em !important;
   padding-bottom: 2em !important;
 }
-
+.taxt {
+  font-family: var(--font-jakarta-sans);
+}
 .cover p {
   color: var(--font-color-primary);
-  font-family: Plus_Jakarta;
+
   font: 300;
   line-height: 1.5;
   margin-top: 0.5em;
@@ -49,7 +50,6 @@
   }
 
   .hero h1 {
-    font-family: Plus_Jakarta;
     font-weight: 400;
     line-height: 0.12;
     font-size: 3em;
@@ -58,8 +58,7 @@
 
   .hero h2 {
     font-size: 1.5em;
-    font-family: YanoneKaffeesatz;
-    font-family: Plus_Jakarta;
+    font-family: Bebas_Neue;
     letter-spacing: 0.17em;
     color: var(--font-color-secondary);
     margin: 0.5em 0 0.2em;
@@ -68,7 +67,7 @@
   .hero p {
     font-size: 1.2em;
     margin-bottom: 1em;
-    font-family: Plus_Jakarta;
+
     margin-bottom: 0;
     font-weight: 600;
   }
