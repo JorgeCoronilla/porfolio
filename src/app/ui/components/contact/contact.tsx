@@ -7,16 +7,27 @@ import Modal from '../modal';
 import Warning from './warning';
 import { useContact } from '@/app/lib/hooks/useContact';
 import SocialMedia from '../header/socialMedia';
+import SectionTitle from '../sectionTitle';
+import { useScreenEvents } from '@/app/lib/hooks/useScreenEvents';
 
 export const ContactForm = () => {
   const { sendMessage, getData, warning, isOnFocus, showModal } = useContact();
+  const { mobileScroll } = useScreenEvents();
+  const isMobileScrollInRange = mobileScroll >= 85;
 
   return (
     <>
+      {/* <p style={{ position: 'fixed', color: 'pink', top: '5px' }}>
+        {mobileScroll}
+      </p> */}
       <section
         className={styles.contact}
         id="contact"
       >
+        <SectionTitle
+          text="Contacto"
+          show={isMobileScrollInRange}
+        />
         <div className={styles.contactForm}>
           <form onSubmit={sendMessage}>
             <InputFields

@@ -17,9 +17,12 @@ export default function Home() {
           <h2>Front-end developer </h2>
           <p>Desarrollo de aplicaciones web, accesibilidad y diseño.</p>
         </div>
+
         <Cover />
         <Experience />
+
         <Projects />
+
         <ContactForm />
       </main>
     </>

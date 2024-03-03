@@ -4,6 +4,7 @@ export const useScreenEvents = () => {
   const [coordinates, setCoordinates] = useState({ x: 0, y: 0 });
   const [progress, setProgress] = useState('0%');
   const [opacity, setOpacity] = useState(1);
+  const [mobileScroll, setMobileScroll] = useState(0);
 
   useEffect(() => {
     document.body.addEventListener('mousemove', cursorEffect);
@@ -34,6 +35,7 @@ export const useScreenEvents = () => {
       // For mobile devices, adjust scroll behavior here
       const scrollPercentage = getMobileScrollPercentage();
       setProgress(`${scrollPercentage}%`);
+      setMobileScroll(parseInt(scrollPercentage));
       const newOpacity = 1 - parseInt(scrollPercentage) / 10;
       setOpacity(newOpacity);
     } else {
@@ -63,5 +65,5 @@ export const useScreenEvents = () => {
     return scrollPercentage.toFixed(2);
   };
 
-  return { coordinates, progress, opacity };
+  return { coordinates, progress, opacity, mobileScroll };
 };

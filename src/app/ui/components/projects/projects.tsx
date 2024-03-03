@@ -1,11 +1,20 @@
+'use client';
 import React from 'react';
 import styles from './projects.module.css';
+import { useScreenEvents } from '@/app/lib/hooks/useScreenEvents';
+import SectionTitle from '../sectionTitle';
 export default function Projects() {
+  const { mobileScroll } = useScreenEvents();
+  const isMobileScrollInRange = mobileScroll >= 61 && mobileScroll <= 80;
   return (
     <section
       className={styles.projects}
       id="projects"
     >
+      <SectionTitle
+        text="Projects"
+        show={isMobileScrollInRange}
+      />
       <div>
         <div className={styles.projectContainer}>
           <div>
