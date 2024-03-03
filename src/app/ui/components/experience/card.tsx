@@ -7,7 +7,7 @@ interface Props {
   title: string;
   description: string;
   links: { name: string; href: string }[];
-  skills: string[];
+  skills: string;
   pills: string[];
 }
 

@@ -1,6 +1,6 @@
 .contact {
   height: 100dvh;
-  padding-top: 4em;
+  padding-top: 4.5em;
 }
 .contactForm {
   color: var(--font-color-primary);
@@ -24,13 +24,13 @@
 
   color: var(--font-color-primary);
   background-color: transparent;
-  font-family: YanoneKaffeesatz;
 }
 
 .contactForm label,
 .contactForm button {
   color: var(--font-color-primary);
-  font-size: 1ch.5;
+  /* color: var(--font-color-opposite); */
+  font-family: Bebas_Neue;
   letter-spacing: 2px;
 }
 
@@ -38,24 +38,28 @@
   padding: 0.8em 0.5em 0.3em;
 }
 .contactForm textarea {
-  padding: 0.8em 0.5em 0.3em;
+  padding: 1.6em 0.5em 0.3em;
   min-height: 15vh;
+  font-family: Plus_Jakarta;
+  font-size: 0.9em;
 }
 
 .contactForm button {
+  font-size: 1.2em;
   background-color: var(--font-color-primary);
   color: black;
-  padding: 10px 2em;
+  padding: 0.5em 1em 0.3em;
   display: block;
-  margin: 0 auto;
+  margin: -1em auto;
   box-shadow: 5px 5px 0 var(--shadow-color);
   border-radius: 5px;
 }
 
 .contactForm label {
   position: absolute;
-  margin: -0.5em 0.5em 0;
-  padding: 0 0 0 0.2em;
+  margin: -0.6em 0.5em 0;
+  padding: 0 0.1em 0 0.3em;
+  border-radius: 2px;
   z-index: 100;
-  background-color: rgb(4, 27, 29);
+  background-color: #202121;
 }
