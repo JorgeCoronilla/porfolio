@@ -17,9 +17,9 @@ export const ContactForm = () => {
 
   return (
     <>
-      {/* <p style={{ position: 'fixed', color: 'pink', top: '5px' }}>
+      <p style={{ position: 'fixed', color: 'pink', top: '5px' }}>
         {mobileScroll}
-      </p> */}
+      </p>
       <section
         className={styles.contact}
         id="contact"
