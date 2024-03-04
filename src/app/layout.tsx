@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-// import { Bebas_Neue, Plus_Jakarta_Sans } from 'next/font/google';
+import { Plus_Jakarta_Sans } from 'next/font/google';
 // import localFont from 'next/font/local';
 
 import './globals.css';
@@ -9,12 +9,12 @@ import './globals.css';
 //   weight: '400',
 //   variable: '--font-bebas-neue',
 // });
-// const plus_jakarta_sans = Plus_Jakarta_Sans({
-//   subsets: ['latin'],
-//   weight: ['200', '300', '400', '500', '600', '700', '800'],
-//   display: 'fallback',
-//   variable: '--font-jakarta-sans',
-// });
+const plus_jakarta_sans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600', '700', '800'],
+  display: 'fallback',
+  variable: '--font-jakarta-sans',
+});
 // const plus_jakarta_sans = localFont({
 //   src: './ui/fonts/Plus_Jakarta/PlusJakartaSans-VariableFont_wght.ttf',
 // });
@@ -31,8 +31,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <body className={plus_jakarta_sans.className}>{children}</body> */}
-      <body>{children}</body>
+      <body className={plus_jakarta_sans.className}>{children}</body>
+      {/* <body>{children}</body> */}
     </html>
   );
 }

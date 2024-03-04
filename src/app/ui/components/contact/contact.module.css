@@ -29,7 +29,6 @@
 .contactForm label,
 .contactForm button {
   color: var(--font-color-primary);
-  /* color: var(--font-color-opposite); */
   font-family: Bebas_Neue;
   letter-spacing: 2px;
 }
@@ -40,7 +39,6 @@
 .contactForm textarea {
   padding: 1.6em 0.5em 0.3em;
   min-height: 15vh;
-  font-family: Plus_Jakarta;
   font-size: 0.9em;
 }
 

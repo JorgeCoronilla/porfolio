@@ -42,7 +42,7 @@ html,
 body {
   max-width: 100vw;
   background-color: var(--background-color);
-  font-family: Plus_Jakarta;
+  /* font-family: Plus_Jakarta; */
 }
 
 a {
@@ -84,10 +84,10 @@ p {
   height: 8em;
 }
 
-@font-face {
+/* @font-face {
   font-family: Plus_Jakarta;
   src: url(./ui/fonts/Plus_Jakarta/PlusJakartaSans-VariableFont_wght.ttf);
-}
+} */
 @font-face {
   font-family: Bebas_Neue;
   src: url(./ui/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
