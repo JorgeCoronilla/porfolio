@@ -11,7 +11,7 @@ import stylesExperience from '../experience/experience.module.css';
 import Pills from '../experience/pills';
 export default function Projects() {
   const { mobileScroll, isMobileDevice } = useScreenEvents();
-  const isMobileScrollInRange = mobileScroll >= 55 && mobileScroll <= 68;
+  const isMobileScrollInRange = mobileScroll >= 60 && mobileScroll <= 66;
   return (
     <section
       className={styles.projects}
