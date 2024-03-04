@@ -22,19 +22,19 @@ export const ContactForm = () => {
         id="contact"
       >
         <SectionTitle
-          text="Contacto"
+          text="Contact"
           show={isMobileScrollInRange}
         />
         <div className={styles.contactForm}>
           <form onSubmit={sendMessage}>
             <InputFields
               action={getData}
-              label="Nombre:"
+              label="Name:"
               type="text"
               name="name"
               warning={!warning.name && isOnFocus.name}
               isOnFocus={isOnFocus.name}
-              warningMessage="Escribe un nombre válido"
+              warningMessage="Please, write a valid name"
             />
 
             <InputFields
@@ -44,41 +44,41 @@ export const ContactForm = () => {
               name="email"
               warning={!warning.email && isOnFocus.email}
               isOnFocus={isOnFocus.email}
-              warningMessage="Escribe un email válido"
+              warningMessage="Please, write a valid email"
             />
             <InputFields
               action={getData}
-              label="Teléfono:"
+              label="Phone:"
               type="text"
               name="phone"
               warning={!warning.phone && isOnFocus.phone}
               isOnFocus={isOnFocus.phone}
-              warningMessage="Escribe un teléfono válido"
+              warningMessage="Please, write a valid phone number"
             />
 
             <div>
               <label id="text-area-label">Mensaje:</label>
               <textarea
                 name="message"
-                defaultValue="Hello! your message here"
+                defaultValue="Hello! I would like to talk with you about..."
                 onChange={getData}
                 aria-labelledby="text-area-label"
               />
             </div>
             <Warning
               show={!warning.message && isOnFocus.message}
-              message="Escribe un mensaje válido"
+              message="Please, write a message"
             />
             <div>
               <Button
-                text="Enviar"
+                text="Send"
                 isDisabled={!warning.allFields}
               />
             </div>
           </form>
           <Modal
             show={showModal}
-            message="Mensaje enviado"
+            message="Message received"
           />
         </div>
       </section>

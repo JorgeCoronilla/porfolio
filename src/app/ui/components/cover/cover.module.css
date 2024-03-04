@@ -4,6 +4,11 @@
   padding-top: 7em;
 }
 
+@media screen and (max-width: 968px) {
+  .cover {
+    padding-top: 4em;
+  }
+}
 .cover div {
   padding-top: 2em !important;
   padding-bottom: 2em !important;

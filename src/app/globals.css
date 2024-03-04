@@ -9,6 +9,7 @@
   --background-transparent: rgba(0, 255, 255, 0.151);
   --background-transparent-purple: rgba(214, 127, 255, 0.151);
   --background-transparent-project: rgba(112, 112, 112, 0.342);
+  --background-transparent-warning: rgb(29, 60, 61);
   --shadow-color: rgba(0, 0, 0, 0.3);
 
   --warning-color: rgb(240, 194, 194);

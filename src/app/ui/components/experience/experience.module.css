@@ -1,7 +1,23 @@
 .experience {
   height: 100dvh;
 }
+@media screen and (max-width: 1167px) {
+  .experience > div {
+    top: 5em !important;
+  }
+}
 
+@media screen and (max-width: 1062px) {
+  .experience > div {
+    top: 3.5em !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .experience > div {
+    top: 2.5em !important;
+  }
+}
 .experience > div {
   padding-top: 3em !important;
   display: flex;
