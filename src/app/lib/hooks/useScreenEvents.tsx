@@ -5,7 +5,7 @@ export const useScreenEvents = () => {
   const [progress, setProgress] = useState('0%');
   const [opacity, setOpacity] = useState(1);
   const [mobileScroll, setMobileScroll] = useState(0);
-
+  const [isMobileDevice, setIsMobileDevice] = useState(false);
   useEffect(() => {
     document.body.addEventListener('mousemove', cursorEffect);
     window.addEventListener('scroll', handleScroll);
@@ -18,7 +18,6 @@ export const useScreenEvents = () => {
   }, []);
 
   useEffect(() => {
-    // Update CSS variable for opacity
     document.documentElement.style.setProperty('--hero-opacity', `${opacity}`);
   }, [opacity]);
 
@@ -49,6 +48,11 @@ export const useScreenEvents = () => {
   };
 
   const isMobile = () => {
+    setIsMobileDevice(
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    );
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
     );
@@ -65,5 +69,5 @@ export const useScreenEvents = () => {
     return scrollPercentage.toFixed(2);
   };
 
-  return { coordinates, progress, opacity, mobileScroll };
+  return { coordinates, progress, opacity, mobileScroll, isMobileDevice };
 };

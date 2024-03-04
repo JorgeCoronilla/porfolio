@@ -10,7 +10,7 @@ import LinkIcon from '../icons/linkIcon';
 import stylesExperience from '../experience/experience.module.css';
 import Pills from '../experience/pills';
 export default function Projects() {
-  const { mobileScroll } = useScreenEvents();
+  const { mobileScroll, isMobileDevice } = useScreenEvents();
   const isMobileScrollInRange = mobileScroll >= 55 && mobileScroll <= 68;
   return (
     <section
@@ -19,7 +19,7 @@ export default function Projects() {
     >
       <SectionTitle
         text="Projects"
-        show={isMobileScrollInRange}
+        show={isMobileScrollInRange && isMobileDevice}
       />
       <div>
         <div className={styles.projectContainer}>

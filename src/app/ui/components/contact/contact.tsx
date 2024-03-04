@@ -12,7 +12,7 @@ import { useScreenEvents } from '@/app/lib/hooks/useScreenEvents';
 
 export const ContactForm = () => {
   const { sendMessage, getData, warning, isOnFocus, showModal } = useContact();
-  const { mobileScroll } = useScreenEvents();
+  const { mobileScroll, isMobileDevice } = useScreenEvents();
   const isMobileScrollInRange = mobileScroll >= 85;
 
   return (
@@ -23,7 +23,7 @@ export const ContactForm = () => {
       >
         <SectionTitle
           text="Contact"
-          show={isMobileScrollInRange}
+          show={isMobileScrollInRange && isMobileDevice}
         />
         <div className={styles.contactForm}>
           <form onSubmit={sendMessage}>
@@ -57,7 +57,7 @@ export const ContactForm = () => {
             />
 
             <div>
-              <label id="text-area-label">Mensaje:</label>
+              <label id="text-area-label">Message:</label>
               <textarea
                 name="message"
                 defaultValue="Hello! I would like to talk with you about..."
