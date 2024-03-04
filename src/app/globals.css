@@ -7,7 +7,10 @@
   --stain-color-1: aquamarine;
   --stain-color-2: rgb(214, 127, 255);
   --background-transparent: rgba(0, 255, 255, 0.151);
+  --background-transparent-purple: rgba(214, 127, 255, 0.151);
+  --background-transparent-project: rgba(112, 112, 112, 0.342);
   --shadow-color: rgba(0, 0, 0, 0.3);
+
   --warning-color: rgb(240, 194, 194);
   --hero-opacity: 1;
 }

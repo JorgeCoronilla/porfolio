@@ -1,22 +1,24 @@
 .cover {
   height: 100dvh;
   color: var(--font-color-primary);
-  padding-top: 4em;
+  padding-top: 7em;
 }
 
 .cover div {
   padding-top: 2em !important;
   padding-bottom: 2em !important;
 }
-.taxt {
-  font-family: var(--font-jakarta-sans);
+
+.cover h3 {
+  font-size: 0.95em;
 }
+
 .cover p {
   color: var(--font-color-primary);
-
+  text-align: center;
   font: 300;
   line-height: 1.5;
-  margin-top: 0.5em;
+
   font-size: clamp(0.8rem, 0.48rem + 0.853vw, 1.2rem);
 }
 
@@ -34,7 +36,9 @@
   font-weight: 600 !important;
   margin-bottom: 1.2em;
 }
-
+div.paragraghContainer > p {
+  margin-bottom: 2em;
+}
 @media screen and (min-width: 850px) {
   .cover div:hover {
     background-color: var(--background-transparent);
@@ -84,5 +88,16 @@
   .title2 {
     letter-spacing: 0.17em !important;
     margin-left: 0.15em;
+  }
+  div.paragraghContainer {
+    padding-top: 0 !important;
+    margin-top: -1em !important;
+  }
+  div.paragraghContainer > p {
+    margin-bottom: 0;
+  }
+  .cover h3 {
+    font-size: 1.1em;
+    margin-bottom: 0.6em;
   }
 }

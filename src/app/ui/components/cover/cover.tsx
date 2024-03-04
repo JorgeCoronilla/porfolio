@@ -1,5 +1,37 @@
 import React from 'react';
 import styles from './cover.module.css';
+import Pills from '../experience/pills';
+const coverSkills = [
+  'JavaScript',
+  'TypeScript',
+  'SOLID',
+  'React',
+  'NodeJs',
+  'Nextjs',
+  'CSS',
+  'HTML',
+  'Webpack',
+  'Chrome extensions',
+  'WCAG 2.2',
+  'Express',
+  'API rest',
+  'Websockets',
+  'MongoDB',
+  'PostgreSQL',
+  'SQL',
+];
+
+const coverMainPills = [
+  'Performance',
+  'Design',
+  'Accessible',
+  'Engaging',
+  'Responsive',
+  'Scalable',
+  'SEO',
+  'Security',
+  'Cross-browser',
+];
 export default function Cover() {
   return (
     <section
@@ -12,15 +44,25 @@ export default function Cover() {
           <span className={styles.jorge}>Jorge</span>
         </h1>
         <h1 className={styles.title2}>Coronilla</h1>
-        <h2>Full-stack developer </h2>
-        <p>Desarrollo de aplicaciones web, accesibilidad y diseño.</p>
+        <h2>Front-end developer </h2>
+        <h3>
+          Creation of full-stack web applications, accessibility expert and
+          design.
+        </h3>
       </div>
-      <div>
+      <div className={styles.paragraghContainer}>
         <p>
-          With 18 years of international experience teaching languages and
-          running my own business.
+          Always open to bring more tools to my stack. Learning is one of my
+          passions.
         </p>
-        <p>Learning is one of my passions.</p>
+        <Pills
+          pills={coverMainPills}
+          classType="strenths"
+        />
+        <Pills
+          pills={coverSkills}
+          classType="skills"
+        />
       </div>
     </section>
   );

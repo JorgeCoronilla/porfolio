@@ -62,7 +62,18 @@
   gap: 0.35em;
   margin-top: 0.6em;
 }
+.strenths {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.35em;
+  margin: 1em 0 1em;
+  justify-content: center;
+}
 
+.strenths + div {
+  justify-content: center !important;
+}
 .experienceLinks a {
   color: var(--font-color-secondary);
 }
@@ -76,12 +87,28 @@
   margin-left: 0.5em;
 }
 
+div.skills,
+div.skills > div,
+div.strenths,
+div.strenths > div {
+  padding: 0 !important;
+}
 .skills p {
   background-color: var(--background-transparent);
   padding: 0.3em 0.8em 0.3em 0.9em;
   color: var(--font-color-secondary);
   border-radius: 15px;
   font-size: 0.65em !important;
+  font-weight: 600;
+  margin-top: 0 !important;
+}
+
+.strenths p {
+  background-color: var(--background-transparent-purple);
+  padding: 0.3em 0.8em 0.3em 0.9em;
+  color: var(--font-color-tertiary);
+  border-radius: 15px;
+  font-size: 0.85em !important;
   font-weight: 600;
   margin-top: 0 !important;
 }
@@ -140,6 +167,9 @@
   }
   .skills {
     margin-top: 0.5em;
+  }
+  .strenths {
+    margin: 1em 0 1em;
   }
   .skills p {
     background-color: var(--background-transparent);

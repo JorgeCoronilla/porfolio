@@ -7,7 +7,7 @@ import { useScreenEvents } from '@/app/lib/hooks/useScreenEvents';
 import SectionTitle from '../sectionTitle';
 export default function Experience() {
   const { mobileScroll } = useScreenEvents();
-  const isMobileScrollInRange = mobileScroll >= 25 && mobileScroll <= 60;
+  const isMobileScrollInRange = mobileScroll >= 25 && mobileScroll <= 35;
   return (
     <section
       className={styles.experience}

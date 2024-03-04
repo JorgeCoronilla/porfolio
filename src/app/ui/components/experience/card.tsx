@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './experience.module.css';
 import LinkIcon from '../icons/linkIcon';
+import Pills from './pills';
 
 interface Props {
   date: string;
@@ -47,13 +48,17 @@ export default function Card({
               </div>
             ))}
           </div>
-          <div className={styles.skills}>
+          <Pills
+            pills={pills}
+            classType="skills"
+          />
+          {/* <div className={styles.skills}>
             {pills.map((pill, index) => (
               <div key={index}>
                 <p>{pill}</p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
