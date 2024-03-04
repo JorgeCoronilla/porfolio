@@ -3,6 +3,9 @@ import React from 'react';
 import styles from './projects.module.css';
 import { useScreenEvents } from '@/app/lib/hooks/useScreenEvents';
 import SectionTitle from '../sectionTitle';
+import Image from 'next/image';
+import shareIt from '../../../../../public/share-it.webp';
+import accessibilityWidget from '../../../../../public/accessibility-widget.webp';
 export default function Projects() {
   const { mobileScroll } = useScreenEvents();
   const isMobileScrollInRange = mobileScroll >= 61 && mobileScroll <= 80;
@@ -18,10 +21,16 @@ export default function Projects() {
       <div>
         <div className={styles.projectContainer}>
           <div>
-            <img
+            {/* <img
               alt="share-it screen shot"
               src="./share-it.webp"
-            ></img>
+            ></img> */}
+            <Image
+              alt="share-it screen shot"
+              src={shareIt}
+              width={152}
+              height={85.5}
+            ></Image>
           </div>
           <p>Share-it app</p>
           <div>
@@ -35,11 +44,16 @@ export default function Projects() {
         </div>
         <div className={styles.projectContainer}>
           <div>
-            {' '}
-            <img
+            {/* <img
               alt="accessibility widget page screen shot"
               src="./accessibility-widget.webp"
-            ></img>
+            ></img> */}
+            <Image
+              alt="accessibility widget page screen shot"
+              src={accessibilityWidget}
+              width={152}
+              height={85.5}
+            ></Image>
           </div>
           <p>Web Accessibility widget</p>
         </div>
