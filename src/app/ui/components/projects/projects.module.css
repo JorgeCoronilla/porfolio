@@ -23,7 +23,7 @@ p.description {
 }
 .projectContainer {
   border-radius: 5px;
-  height: 10em;
+  height: 12em;
   width: 13em;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@ p.description {
   height: 26.5em;
 }
 .projectContainer > div:first-child {
-  height: 6.571875em;
+  height: 9.6em;
   width: 100%;
   margin-bottom: 1em;
   /* border: 5px solid green; */
@@ -63,7 +63,7 @@ p.description {
   letter-spacing: 0.15em;
   font-family: Bebas_neue;
   text-align: center;
-  margin-top: 0.3em;
+  margin-top: -0.5em;
 }
 .projectContainer:hover {
   opacity: 1;
@@ -71,10 +71,10 @@ p.description {
 
 @media screen and (max-width: 850px) {
   .projectContainer:hover {
-    height: 29em;
+    height: 30em;
   }
   .projects {
-    padding-top: 5em;
+    padding-top: 3.5em;
   }
   .projectContainer {
     height: 9.5em;
@@ -115,5 +115,8 @@ p.description {
     margin: 0.5em 0 0;
     padding: 0 1em;
     font-size: 0.9em;
+  }
+  .projectContainer > div:first-child {
+    height: 8em;
   }
 }

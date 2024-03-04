@@ -28,7 +28,7 @@ export default function Projects() {
               alt="share-it screen shot"
               src={shareIt}
               width={208}
-              height={105}
+              height={156}
             ></Image>
           </div>
           <div>
@@ -72,7 +72,7 @@ export default function Projects() {
               alt="accessibility widget page screen shot"
               src={accessibilityWidget}
               width={208}
-              height={105}
+              height={156}
             ></Image>
           </div>
           <div>

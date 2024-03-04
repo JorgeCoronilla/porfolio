@@ -29,9 +29,10 @@ export const experienceData = [
   {
     date: '2010 - 2023',
     title: 'Founder and director of SALT Edinburgh',
-    description: 'Management of staff and providers',
+    description:
+      'Management of staff and providers, develop a curriculum of excellence, and marketing.',
     skills:
-      'Support for react applications, development of new features, and maintenance of the widget.',
+      'Collaboration with Spanish Consulate, Education local authorities and Instituto Cervantes.',
 
     pills: [
       'Wordpress',
