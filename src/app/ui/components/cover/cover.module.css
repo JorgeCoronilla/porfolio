@@ -1,12 +1,12 @@
 .cover {
   height: 100dvh;
   color: var(--font-color-primary);
-  padding-top: 7em;
+  padding-top: 4em;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1108px) {
   .cover {
-    padding-top: 4em;
+    padding-top: 3em;
   }
 }
 .cover div {
@@ -16,15 +16,6 @@
 
 .cover h3 {
   font-size: 0.95em;
-}
-
-.cover p {
-  color: var(--font-color-primary);
-  text-align: center;
-  font: 300;
-  line-height: 1.5;
-
-  font-size: clamp(0.8rem, 0.48rem + 0.853vw, 1.2rem);
 }
 
 .hero {
@@ -42,7 +33,14 @@
   margin-bottom: 1.2em;
 }
 div.paragraghContainer > p {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  color: var(--font-color-primary);
+  text-align: center;
+  font: 300;
+  line-height: 1.5;
+
+  font-size: clamp(0.8rem, 0.48rem + 0.853vw, 1.2rem);
+  font-size: clamp(1rem, -0.3333rem + 2.8444vw, 1.8rem);
 }
 @media screen and (min-width: 850px) {
   .cover div:hover {

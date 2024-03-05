@@ -82,7 +82,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.35em;
+  gap: 0.55em;
   margin: 1em 0 1em;
   justify-content: center;
 }
@@ -115,16 +115,20 @@ div.strenths > div {
   color: var(--font-color-secondary);
   border-radius: 15px;
   font-size: 0.65em !important;
+  font-size: 0.85em !important;
+  font-size: clamp(0.65rem, 0.3167rem + 0.7111vw, 0.85rem) !important;
   font-weight: 600;
   margin-top: 0 !important;
 }
 
 .strenths p {
   background-color: var(--background-transparent-purple);
-  padding: 0.3em 0.8em 0.3em 0.9em;
+  padding: 0.2em 0.8em 0.3em 0.9em;
   color: var(--font-color-tertiary);
   border-radius: 15px;
-  font-size: 0.85em !important;
+  /* font-size: 0.85em !important;
+  font-size: 1.2em !important; */
+  font-size: clamp(0.75rem, 0rem + 1.6vw, 1.2rem);
   font-weight: 600;
   margin-top: 0 !important;
 }
