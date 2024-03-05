@@ -24,12 +24,14 @@
   box-shadow: 0px 0px 20px -11px rgb(75, 75, 75);
   overflow-y: hidden;
   background-color: var(--background-transparent-project);
+  transition: all 0.8s ease;
 }
 .project:hover {
   height: fit-content;
+  height: 28.8em;
 }
 .project:hover .imageContainer {
-  height: 0;
+  /* height: 0; */
 }
 
 .imageContainer {
@@ -37,13 +39,15 @@
   height: 9.75em;
   width: 100%;
   transition: all 0.8s ease;
+  background-color: black;
 }
 
 .textContainer {
   padding: 0 1em 1em;
   background-color: black;
   z-index: 2;
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .textContainer h2 {
@@ -66,18 +70,23 @@
 @media screen and (max-width: 850px) {
   .project {
     width: 18em;
+    width: 15em;
+
     height: 13.5em;
+    height: 11.25em;
   }
   .imageContainer {
     height: 13.5em;
+    height: 11.25em;
   }
   .imageContainer img {
     height: 13.5em;
+    height: 11.25em;
+
     width: 18em;
+    width: 15em;
   }
   .project:hover {
-    height: 28em;
-    height: 13.5em;
-    height: fit-content;
+    height: 25.8em;
   }
 }

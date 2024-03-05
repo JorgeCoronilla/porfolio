@@ -6,12 +6,15 @@ import CursorLight from './cursorLight';
 import ProgressBar from './progressBar';
 
 export default function Interactive() {
-  const { coordinates, progress, opacity } = useScreenEvents();
+  const { coordinates, progress, opacity, isMobileDevice } = useScreenEvents();
 
   return (
     <>
       <ProgressBar progress={progress} />
-      <Header scroll={parseInt(progress)} />
+      <Header
+        isMobile={isMobileDevice}
+        scroll={parseInt(progress)}
+      />
       <CursorLight
         x={coordinates.x}
         y={coordinates.y}

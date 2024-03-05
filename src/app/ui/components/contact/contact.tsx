@@ -13,7 +13,7 @@ import { useScreenEvents } from '@/app/lib/hooks/useScreenEvents';
 export const ContactForm = () => {
   const { sendMessage, getData, warning, isOnFocus, showModal } = useContact();
   const { mobileScroll, isMobileDevice } = useScreenEvents();
-  const isMobileScrollInRange = mobileScroll >= 92;
+  const isMobileScrollInRange = mobileScroll >= 93;
 
   return (
     <>

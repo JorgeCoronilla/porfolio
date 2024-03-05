@@ -11,7 +11,7 @@ import stylesExperience from '../experience/experience.module.css';
 import Pills from '../experience/pills';
 export default function Projects() {
   const { mobileScroll, isMobileDevice } = useScreenEvents();
-  const isMobileScrollInRange = mobileScroll >= 61 && mobileScroll <= 66;
+  const isMobileScrollInRange = mobileScroll >= 66 && mobileScroll <= 73;
   return (
     <section
       className={styles.projects}
@@ -21,6 +21,7 @@ export default function Projects() {
         text="Projects"
         show={isMobileScrollInRange && isMobileDevice}
       />
+
       <div className={styles.projectsContainer}>
         <div className={styles.project}>
           <div className={styles.imageContainer}>
@@ -37,7 +38,8 @@ export default function Projects() {
               Full stack web app to manage personal and shared expenses.
             </p>
             <p className={styles.description}>
-              Login, signUp, data base CRUD, responsive design, SEO.
+              Login, signUp, data base CRUD, email service, responsive design,
+              SEO and accessibility.
             </p>
             <div className={stylesExperience.experienceLinks}>
               <div className={styles.link}>
@@ -76,8 +78,8 @@ export default function Projects() {
           <div className={styles.textContainer}>
             <h2>Accessibility Widget</h2>
             <p className={styles.description}>
-              Web accessibility widget that helps users to navigate and change
-              its content to make it accessibible.
+              Web widget that helps users to navigate and change its content to
+              make it accessibible.
             </p>
 
             <p className={styles.description}>

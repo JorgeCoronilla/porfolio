@@ -13,7 +13,6 @@ export const useContact = () => {
 
   useEffect(() => {
     setWarning(validateForm(data));
-    console.log(warning);
   }, [data]);
 
   const getData = (

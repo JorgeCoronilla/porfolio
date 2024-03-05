@@ -7,7 +7,9 @@ export const useScreenEvents = () => {
   const [mobileScroll, setMobileScroll] = useState(0);
   const [isMobileDevice, setIsMobileDevice] = useState(false);
   useEffect(() => {
-    document.body.addEventListener('mousemove', cursorEffect);
+    if (!isMobileDevice) {
+      document.body.addEventListener('mousemove', cursorEffect);
+    }
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleScroll);
     return () => {

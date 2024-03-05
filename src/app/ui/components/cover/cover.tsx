@@ -1,6 +1,9 @@
+'use client';
 import React from 'react';
 import styles from './cover.module.css';
 import Pills from '../experience/pills';
+import SectionTitle from '../sectionTitle';
+import { useScreenEvents } from '@/app/lib/hooks/useScreenEvents';
 const coverSkills = [
   'JavaScript',
   'TypeScript',
@@ -33,11 +36,18 @@ const coverMainPills = [
   'Cross-browser',
 ];
 export default function Cover() {
+  const { mobileScroll, isMobileDevice } = useScreenEvents();
+  const isMobileScrollInRange = mobileScroll >= 14 && mobileScroll <= 26;
+
   return (
     <section
       className={styles.cover}
       id="cover"
     >
+      <SectionTitle
+        text="About me"
+        show={isMobileScrollInRange && isMobileDevice}
+      />
       <div className={styles.hero}>
         <h1 className={styles.title1}>
           <span className={styles.hi}>Hi!</span> I&apos;m{' '}
