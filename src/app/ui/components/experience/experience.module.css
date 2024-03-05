@@ -130,15 +130,8 @@ div.strenths > div {
 }
 
 @media screen and (max-width: 850px) {
-  .title {
-    /* display: block;
-    position: absolute;
-    left: 1.7em;
-    top: 4em;
-    color: var(--font-color-primary); */
-  }
   .experience {
-    padding-top: 4em;
+    padding-top: 4.5em;
   }
 
   .row {
@@ -158,19 +151,13 @@ div.strenths > div {
     margin: -1em 0 0.5em;
   }
   .experience > div > div > div:nth-child(1) > p {
-    font-size: 0.8em;
+    font-size: 0.75em;
     letter-spacing: 0.08em;
   }
 
   .experience .row h3 {
     color: var(--font-color-tertiary);
-    letter-spacing: 0.01em;
-    font-size: 1em;
-  }
-
-  .experience .row ul {
-    margin: 1em 0 0 1em;
-    color: var(--font-color-primary);
+    letter-spacing: 0.05em;
     font-size: 0.9em;
   }
 

@@ -30,21 +30,17 @@ export const experienceData = [
     date: '2010 - 2023',
     title: 'Founder and director of SALT Edinburgh',
     description:
-      'Management of staff and providers, develop a curriculum of excellence, and marketing.',
+      'Management of staff and providers, development of the curriculum, and marketing.',
     skills:
-      'Collaboration with Spanish Consulate, Education local authorities and Instituto Cervantes.',
+      'Collaboration with Spanish Consulate and Scottish local authorities',
 
     pills: [
       'Wordpress',
       'Management',
-      'Marketing',
-      'Sales',
       'Customer service',
       'Teaching',
       'Training',
-      'Recruitment',
-      'Negotiation',
-      'Business development',
+      'Languages',
     ],
     links: [{ name: 'SALTEdinburgh', href: 'https//saltedinburgh.co.uk/' }],
   },
