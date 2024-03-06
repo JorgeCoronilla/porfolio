@@ -10,6 +10,15 @@
     height: 165dvh;
   }
 }
+
+@media screen and (max-height: 500px) {
+  .cover {
+    height: 247.5dvh !important;
+  }
+  .hero {
+    opacity: 1;
+  }
+}
 .cover div {
   padding-top: 2em !important;
   padding-bottom: 2em !important;

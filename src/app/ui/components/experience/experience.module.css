@@ -1,6 +1,12 @@
 .experience {
   height: 100dvh;
 }
+
+@media screen and (max-height: 450px) {
+  .experience {
+    height: 150dvh !important;
+  }
+}
 @media screen and (max-width: 1167px) {
   .experience > div {
     top: 5em !important;

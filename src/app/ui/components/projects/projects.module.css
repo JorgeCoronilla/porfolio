@@ -2,7 +2,11 @@
   height: 100dvh;
   padding-top: 4em;
 }
-
+@media screen and (max-height: 450px) {
+  .projects {
+    height: 150dvh !important;
+  }
+}
 .projectsContainer {
   display: flex;
   flex-direction: row;

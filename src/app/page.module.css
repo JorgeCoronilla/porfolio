@@ -54,8 +54,8 @@
 }
 
 @media screen and (max-height: 450px) {
-  .main > section {
-    height: 200dvh;
+  .main > section > h3 {
+    display: none !important;
   }
 }
 @media screen and (min-width: 1000px) {

@@ -2,6 +2,12 @@
   height: 100dvh;
   padding-top: 5.6em;
 }
+
+@media screen and (max-height: 450px) {
+  .contact {
+    height: 150dvh !important;
+  }
+}
 .contactForm {
   color: var(--font-color-primary);
   gap: 1em;
@@ -26,6 +32,19 @@
   background-color: transparent;
 }
 
+.contactForm input:-webkit-autofill,
+.contactForm input:-webkit-autofill:hover,
+.contactForm input:-webkit-autofill:focus,
+.contactForm input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px #23232329;
+}
+
+/* input:-internal-autofill-selected {
+  background-color: transparent !important;
+} */
 .contactForm label,
 .contactForm button {
   color: var(--font-color-primary);
