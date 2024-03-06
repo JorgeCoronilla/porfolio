@@ -4,7 +4,7 @@
 }
 @media screen and (max-height: 450px) {
   .projects {
-    height: 150dvh !important;
+    height: 200dvh !important;
   }
 }
 .projectsContainer {

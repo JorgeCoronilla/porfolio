@@ -4,7 +4,7 @@
 
 @media screen and (max-height: 450px) {
   .experience {
-    height: 150dvh !important;
+    height: 200dvh !important;
   }
 }
 @media screen and (max-width: 1167px) {

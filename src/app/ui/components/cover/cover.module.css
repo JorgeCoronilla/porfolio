@@ -11,14 +11,6 @@
   }
 }
 
-@media screen and (max-height: 500px) {
-  .cover {
-    height: 247.5dvh !important;
-  }
-  .hero {
-    opacity: 1;
-  }
-}
 .cover div {
   padding-top: 2em !important;
   padding-bottom: 2em !important;
@@ -115,5 +107,14 @@ div.paragraghContainer > p {
   .cover h3 {
     font-size: 1.1em;
     margin-bottom: 0.6em;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .cover {
+    height: 330dvh !important;
+  }
+  .hero {
+    opacity: 1 !important;
   }
 }
